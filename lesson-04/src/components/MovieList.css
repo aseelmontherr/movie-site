@@ -24,3 +24,36 @@
   border: 1px dashed var(--border);
   border-radius: var(--radius);
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.movie-list__animated {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.movie-list__show-more {
+  display: block;
+  margin: 24px auto;
+  padding: 10px 24px;
+  background: transparent;
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  color: var(--gold);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.movie-list__show-more:hover {
+  background: var(--gold);
+  color: white;
+}
